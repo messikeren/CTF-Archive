@@ -1,0 +1,12 @@
+lihat jsnya
+
+lalu
+curl -X POST "https://firestore.googleapis.com/v1/projects/stembactf-fire/databases/(default)/documents:runQuery" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "structuredQuery": {
+      "from": [{"collectionId": "flags"}]
+    }
+  }'
+
+susun flag by order

