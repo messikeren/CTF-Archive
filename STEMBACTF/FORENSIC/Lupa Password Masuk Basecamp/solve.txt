@@ -1,0 +1,18 @@
+extract file chall.zip
+ada 3 file (2 gambar 1 zip)
+kita harus extract file flag.zip yang isinya flag tapi berpassword, dan kita bisa dapatkan password dengan xor kedua gambar
+
+pakai ImageMagick:
+convert gmbr1.bmp gmbr2.bmp -fx "u^v" result.bmp
+
+buka result.bmp akan lihat tulisan:
+passwordnya = P4kEn4nY4
+
+extract file flag.zip tadi dengan password P4kEn4nY4
+muncul flag.txt yang isinya lapis encode dari base32
+
+langsung kita decode pakai cyberchef, di inputnya isikan dari file flag.txt tadi
+lalu di recipe taruh From Base32 14x karena itu encode yang berlapis
+
+lalu di Output akan muncul flag:
+STEMBACTF{0ooppss_4r3_y0u_luCky_0r_ju5t_g00d_4t_1t}

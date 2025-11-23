@@ -1,0 +1,8 @@
+extract file chall.zip
+strings smk7smg.jpg
+
+lalu ada banyak (A/x._A)
+susun sesuai hint
+
+STEMBACTF{H4nGK33r_h4nGk3r_Ran!!}
+

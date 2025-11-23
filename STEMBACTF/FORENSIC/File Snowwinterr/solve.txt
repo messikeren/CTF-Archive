@@ -1,0 +1,11 @@
+exiftool winterrrrrrr.jpg
+kita akan mendapatkan:
+Comment : 3YzANECFqv,72CZZA6S6L84
+
+decode itu dengan hint sesuai soal base58 dan base45
+script pakai python: 
+python3 -c "import base58, base45; print(base58.b58decode('3YzANECFqv').decode() + base45.b45decode('72CZZA6S6L84').decode())"
+hasil: CTF_1tu_MUd4h!!
+
+wrap flag dengan format:
+STEMBACTF{CTF_1tu_MUd4h!!}

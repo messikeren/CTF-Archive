@@ -1,0 +1,15 @@
+strings Triplemini.jpg
+
+dari strings kita dapat:
+bendera(65.164.162.61.156.71.65.137.64.154.141.137.64.154.64.137.142.60.171.137.142.60.171)
+
+pisahkan titik titik dengan spasi menjadi:
+65 164 162 61 156 71 65 137 64 154 141 137 64 154 64 137 142 60 171 137 142 60 171
+
+gunakan cyberchef:
+Recipe: From Octal (Delimiter Space)
+masukan angka yang sudah dipisahkan tadi akan mendapatkan:
+5tr1n95_4la_4l4_b0y_b0y
+
+wrap flag dengan format:
+STEMBACTF{5tr1n95_4la_4l4_b0y_b0y}

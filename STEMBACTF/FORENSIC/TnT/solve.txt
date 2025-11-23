@@ -1,0 +1,13 @@
+kita lihat hex dari chall.txt dengan
+hexdump -C chall.txt
+
+lalu ambil hexnya, dan masukan ke solve.py
+
+di solve.py itu membuat dari 2 bit missal 00 itu berarti 0 dan 01 itu berarti 1,
+lalu menggabungkannya dan membaginya setiap 8 bit karena 1 char ASCII itu terdiri dari 8 bit
+lalu mengubah biner ke bentuk decimal, lalu baru dikonversi ke ASCII pakai chr(decimal)
+
+setelah itu char yang udah didecode tadi ditambahkan ke string flag lalu wrap pakai format
+STEMBACTF{flag}
+
+Flag: STEMBACTF{BinnAries_File}

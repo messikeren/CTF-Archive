@@ -1,0 +1,8 @@
+jadi alur kerja dari script solve.py itu
+
+cek apakah sudah ada rockyou.txt (wordlist untuk password nanti) kalua belum bisa download dulu,
+lalu selanjutnya, sesuai hint dari soal yaitu bruteforce kita brutforce steghide dengan password yang ada di list rockyou.txt.
+
+setelah selesai bruteforce muncul file secret.txt, nah selanjutnya pakai hint berikutnya yaitu openssl kita baca csr pakai openssl, lalu setelah dapat decode, dan akan menghasilkan flag
+
+Flag: STEMBACTF{st3gh1dE_4nD_C5r_f1le}  	

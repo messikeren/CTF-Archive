@@ -1,0 +1,12 @@
+jadi isi file.png itu gambar yang sudah di ubah setiap 4 byte pertama dari 8 byte diubah (shift + 4) yang dibuat itu rusak jadi kita harus memperbaiki itu dengan cara (solve.py)
+
+membaca isi seluruh file.png sebagai byte, lalu mengelompokan setiap 8 byte,
+disetiap 8 byte, 4 byte pertama nilainya dikurangi 4, dan 4 byte berikutnya dibiarkan
+lalu simpan ke fixed.png
+
+buka fixed.png dan anda akan melihat teks:
+entahlah engga habis pikir
+
+sesuai dari soal kita wrap dengan format STEMBACTF dan isinya lowercase jadi
+
+Flag: STEMBACTF{entahlah_engga_habis_pikir}

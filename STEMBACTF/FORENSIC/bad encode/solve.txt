@@ -1,0 +1,12 @@
+extract file bad_encode.zip
+buka folder dist, disitu banyak file
+
+setelah mencoba decode beberapa file muncul full part flagnya di file '![[32![[38.txt'
+langsung decode saja
+
+cat '![[32![[38.txt' | sed 's/!\[\[\([0-9A-Fa-f]\{2\}\)/\\x\1/g' | xargs -0 echo -e | grep "FULL"
+hasil :
+</xs:sequence>FULL P4rt Fl4g: SIJAWARA{f1l3_b4d_45c11_3nc0d3}
+
+ganti format flag:
+STEMBACTF{f1l3_b4d_45c11_3nc0d3}
