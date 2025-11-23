@@ -23,6 +23,7 @@ My collection of CTF challenges and writeups from various cybersecurity competit
 | Reverse Engineering | ⚙️ |
 | Web Exploitation | 🌐 |
 | Sandbox Escape | 🔓 |
+| Miscellaneous | 🗃️ |
 | OSINT | 🕵️‍♂️ |
 
 ---
