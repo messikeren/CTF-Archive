@@ -3,6 +3,7 @@ di script solve.py, itu alur kerjanya
 mengambil data dari file suspicious.pcap
 lalu menyusun data itu per cycle jadi setiap 4 frame dianggap satu cycle (TCP, UDP, ICMP, DNS)
 lalu karena urutan char base64nya acak, kita bruteforce sampai hasilnya base64 yang benar, caranya
-kita tahu format flagnya yaitu STEMBACTF dan jika dalam base64 itu U1RFTUJBQ1RG nah jadi script mencari hasil gabungan yang diawali dengan itu, setelah itu decode pake base64 menjadi flag deh.
+kita tahu format flagnya yaitu STEMBACTF dan jika dalam base64 itu U1RFTUJBQ1RG nah jadi script mencari hasil gabungan yang diawali dengan itu
+setelah itu decode pake base64 menjadi flag deh.
 
 Flag: STEMBACTF{J4st_Analyz3_Th1s_Tr4ff1c_0key!}
